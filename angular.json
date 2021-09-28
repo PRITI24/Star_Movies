@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "bd3b80e8-ca13-470f-afc7-e0b36fff3da6"
+    "analytics": "ab18e99e-59a3-4e15-87c5-9f8edc3cee16"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "StarMovies": {
+    "potal": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/StarMovies",
+            "outputPath": "dist/potal",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,6 +30,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -71,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "StarMovies:build:production"
+              "browserTarget": "potal:build:production"
             },
             "development": {
-              "browserTarget": "StarMovies:build:development"
+              "browserTarget": "potal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "StarMovies:build"
+            "browserTarget": "potal:build"
           }
         },
         "test": {
@@ -97,6 +98,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -105,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "StarMovies"
+  "defaultProject": "potal"
 }

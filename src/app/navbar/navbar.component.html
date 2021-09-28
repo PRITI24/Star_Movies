@@ -1,7 +1,7 @@
 <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
     <div class="container"><a class="navbar-brand" href="#page-top">Cisco Films</a>
         <div class="input-group">
-            <div class="input-group-prepend text-center invisible" style="opacity: 1;"><span class="input-group-text">Addon</span></div><input class="border rounded form-control" type="text" id="SearchField" placeholder="Search Movies" style="opacity: 0.84;filter: brightness(85%) contrast(147%) grayscale(22%);font-family: 'Kaushan Script', cursive;"
+            <div class="input-group-prepend text-center invisible" style="opacity: 1;"><span class="input-group-text">Addon</span></div><input [formControl]="movies" class="border rounded form-control" type="text" id="SearchField" placeholder="Search Movies" style="opacity: 0.84;filter: brightness(85%) contrast(147%) grayscale(22%);font-family: 'Kaushan Script', cursive;"
                 name="SearchField" maxlength="30">
             <div class="input-group-append"><button class="btn btn-primary" type="button">Go!</button></div>
         </div>

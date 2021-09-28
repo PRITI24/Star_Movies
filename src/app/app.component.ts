@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { map, switchMap, debounceTime, distinctUntilChanged } from 'rxjs/operators';
+import { Observable } from 'rxjs';
+
+import { MovieService } from './movie.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +12,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'StarMovies';
+ 
 }

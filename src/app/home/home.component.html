@@ -1,7 +1,10 @@
-<input type="text" [formControl]="searchControl">
 
-<ul>
-  <li *ngFor="let movie of movies$ | async">
-    {{ movie.Title }}
-  </li>
-</ul>
+
+  
+  <app-search></app-search>
+
+  <button (click)="SearchMovies()">Search Movies</button>
+
+  <button (click)="getFavourites()">Favourite</button>
+
+  

@@ -8,11 +8,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
 import { MovieService } from './movie.service';
+import { FavouritesComponent } from './home/favourites/favourites.component';
+import { SearchComponent } from './home/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    FavouritesComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

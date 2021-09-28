@@ -1,13 +1,138 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="utf-8">
-  <title>StarMovies</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Cisco Films</title>
+    <meta name="description" content="Movie WebApp.">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
-<body>
-  <app-root></app-root>
+
+<body id="page-top">
+    <div>
+        <div class="container">
+            <div class="row"></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#page-top">Cisco Films</a>
+            <div class="input-group">
+                <div class="input-group-prepend text-center invisible" style="opacity: 1;"><span class="input-group-text">Addon</span></div><input class="border rounded form-control" type="text" id="SearchField" placeholder="Search Movies" style="opacity: 0.84;filter: brightness(85%) contrast(147%) grayscale(22%);font-family: 'Kaushan Script', cursive;"
+                    name="SearchField" maxlength="30">
+                <div class="input-group-append"><button class="btn btn-primary" type="button">Go!</button></div>
+            </div>
+            <div style="margin-left: 40px;"><i class="fa fa-user-o" data-toggle="tooltip" data-bs-tooltip="" data-placement="bottom" style="width: 40px;height: 40px;color: rgb(224,230,237);font-size: 40px;" title="User not Logged In"></i></div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image: url(&quot;assets/img/theatercape.png&quot;);">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading text-uppercase" style="font-size: 50px;"><span id="WelcomeHeading" style="font-size: 40;">Login To see Whats Rolling.</span></div>
+                <div class="modal fade" role="dialog" tabindex="-1" id="LoginModal">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Mo<img style="width: 80px;" src="assets/img/logo-preview.png">dal Title</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div><div class="modal-body">
+<div class="dark">
+    <form method="post">
+        <h2 class="sr-only">Login Form</h2>
+        <div class="illustration"><i class="icon ion-ios-locked-outline"></i></div>
+        <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" /></div>
+        <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password" /></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div><a class="forgot" href="#">Forgot your email or password?</a></form>
+</div></div></div>
+                    </div>
+                </div><button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" id="LoginButton" type="button" data-toggle="modal" data-target="#LoginModal">LOGIN</button></div>
+        </div>
+    </header>
+    <section id="portfolio" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading" id="HeadingText">Latest Movies</h2>
+                    <h3 class="section-subheading text-muted">Find you next watchlist here.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 portfolio-item">
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover"></div><img class="img-fluid" id="MovieImage" src="assets/img/star-sky.jpg"></a>
+                    <div class="portfolio-caption">
+                        <h4 class="text-center d-lg-flex justify-content-lg-center">MovieName</h4><label class="text-nowrap text-center d-lg-flex justify-content-lg-center" id="GenreLabel">Genre</label><label class="d-lg-flex justify-content-lg-center" id="Rating-Label">Rating</label>
+                        <div class="row">
+                            <div class="col-lg-9" style="padding-right: 0;">
+                                <p class="d-lg-flex justify-content-lg-center">Movie Description</p>
+                            </div>
+                            <div class="col" style="padding-right: 0;"><button class="btn btn-primary text-center border rounded-circle d-lg-flex justify-content-lg-end" id="FavouriteButton" type="button" style="margin-left: auto;width: 40;margin-right: 0;"><i class="fa fa-star"></i></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" style="background-image:url('assets/img/map-image.png');">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="text-uppercase section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form id="contactForm" name="contactForm" novalidate="novalidate">
+                        <div class="form-row">
+                            <div class="col col-md-6">
+                                <div class="form-group"><input class="form-control" type="text" id="name" placeholder="Your Name *" required=""><small class="form-text text-danger flex-grow-1 help-block lead"></small></div>
+                                <div class="form-group"><input class="form-control" type="email" id="email" placeholder="Your Email *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                                <div class="form-group"><input class="form-control" type="tel" placeholder="Your Phone *" required=""><small class="form-text text-danger help-block lead"></small></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group"><textarea class="form-control" id="message" placeholder="Your Message *" required=""></textarea><small class="form-text text-danger help-block lead"></small></div>
+                            </div>
+                            <div class="col">
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Cisco Films 2021</span></div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
+
 </html>

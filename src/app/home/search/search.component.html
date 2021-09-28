@@ -1,0 +1,7 @@
+
+<input [formControl]="movies">
+<ul>
+    <li *ngFor="let movie of movies$ | async">
+      {{ movie.Title }}
+    </li>
+  </ul>

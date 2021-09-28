@@ -29,7 +29,7 @@ export class AppComponent implements OnInit{
 
   ngAfterViewInit() {
     this.elementRef.nativeElement.ownerDocument
-        .body.style.backgroundColor = 'purple';
+        .body.style.backgroundColor = 'white';
 }
 
   constructor(

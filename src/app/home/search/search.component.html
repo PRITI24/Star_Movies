@@ -1,7 +1,8 @@
-
-<input [formControl]="movies">
+<div class="input-group-prepend text-center invisible" style="opacity: 1;"><span class="input-group-text">Addon</span></div><input [formControl]="movies" class="border rounded form-control" type="text" id="SearchField" placeholder="Search Movies" style="opacity: 0.84;filter: brightness(85%) contrast(147%) grayscale(22%);font-family: 'Kaushan Script', cursive;"
+                name="SearchField" maxlength="30">
+<!-- <input [formControl]="movies">
 <ul>
     <li *ngFor="let movie of movies$ | async">
       {{ movie.Title }}
     </li>
-  </ul>
+  </ul> -->

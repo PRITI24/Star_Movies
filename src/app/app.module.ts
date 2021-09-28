@@ -10,13 +10,19 @@ import { HomeComponent } from './home/home.component';
 import { MovieService } from './movie.service';
 import { FavouritesComponent } from './home/favourites/favourites.component';
 import { SearchComponent } from './home/search/search.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FavouritesComponent,
-    SearchComponent
+    SearchComponent,
+    FooterComponent,
+    NavbarComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
